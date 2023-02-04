@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="containerCalc">
+      <div class="calculator rounded">
+        <div id="calcDisplay" class="calculator_display w-100">0</div>
+        <div class="calculator_keys">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <button
+                    class="operator col-3 btn btn-secondary"
+                    id="operator"
+                    data-action="add"
+                  >
+                    +
+                  </button>
+                  <button
+                    class="operator col-3 btn btn-secondary"
+                    id="operator"
+                    data-action="subtract"
+                  >
+                    -
+                  </button>
+                  <button
+                    class="operator col-3 btn btn-secondary"
+                    id="operator"
+                    data-action="multiply"
+                  >
+                    &times;
+                  </button>
+                  <button
+                    class="operator col-3 btn btn-secondary"
+                    id="operator"
+                    data-action="divide"
+                  >
+                    &divide;
+                  </button>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row">
+                  <button class="col-4 btn btn-light">1</button>
+                  <button class="col-4 btn btn-light">2</button>
+                  <button class="col-4 btn btn-light">3</button>
+                </div>
+
+                <div class="row">
+                  <button class="col-4 btn btn-light">4</button>
+                  <button class="col-4 btn btn-light">5</button>
+                  <button class="col-4 btn btn-light">6</button>
+                </div>
+
+                <div class="row">
+                  <button class="col-4 btn btn-light">7</button>
+                  <button class="col-4 btn btn-light">8</button>
+                  <button class="col-4 btn btn-light">9</button>
+                </div>
+
+                <div class="row">
+                  <button class="col-4 btn btn-light">0</button>
+                  <button class="col-4 btn btn-light" data-action="decimal">
+                    .
+                  </button>
+                  <button class="col-4 btn btn-light" data-action="clear">
+                    C
+                  </button>
+                </div>
+              </div>
+              <button class="equalsBtn col-3 btn" data-action="calculate">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
